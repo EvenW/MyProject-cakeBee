@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>会员注册－ebeecake蛋糕</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/header.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+		<link rel="stylesheet" href="css/reg.css" />
+	</head>
+	<body>
+		<div class="main">
+			<!--引入头部-->
+			<header id="header">
+				<!--<iframe class="header" src="header.html" frameborder="0">-->
+				<!--</iframe>-->
+			</header>
+			<!--登录表单-->
+			<section >
+				<div class="center">
+					<div class="center-form">
+						<div class="assign-header">
+							<p class="title">新会员注册</p>
+						</div>
+						<div class="assign-content">
+							<div class="assign-by-phone active" id="phone">
+								<div class="assign-phone flex">
+									 <span class="assign-title">手机号码:</span>
+									<input class="assign-input" type="text" placeholder="请输入手机号码" maxlength="11"/>
+								</div>
+								<div class="assign-item flex">
+									<span class="assign-title">验证码:</span>
+									<div class="input-flex">
+										<input class="assign-input input-code" data-valiCode="valiCode" type="text" placeholder="请输入图片验证码" maxlength="6"/>
+										<a href="javascript:;" class="assign-input vc1" type="text" name="captcha" alt="点击切换验证码" title="看不清点击换一张">
+											<!--<img src="data/vali-code.php"/>-->
+											<!--<img src="data/code.php" alt=""/>-->
+											<img src="data/login/code.php" onclick="this.src='data/login/code.php?'+Math.random();">
+										</a>
+									</div>
+								</div>
+								<div class="assign-item-msg flex">
+									<span class="assign-title">短信验证码:</span>
+									<div class="input-flex">
+										<input class="assign-input input-code" type="text" placeholder="请输入短信验证码" maxlength="6"/>
+										<a class="assign-input" href="javascript:;">获取短信验证码</a>
+									</div>
+								</div>
+								<div class="help">
+									<span>注册即可获得20元优惠券</span>
+									<a href="#">会员权益&gt;&gt;</a>
+								</div>
+								<div class="phone-btn"><a class="btn" href="#">注册</a></div>	
+							
+						</div>
+					</div>
+					
+				</div>
+			</section>
+			<!--引入尾部-->
+			<footer id="footer">
+				<!--<iframe class="footer" src="footer.html" frameborder="0">-->
+				<!--</iframe>-->
+			</footer>
+		</div>
+		<script src="js/jquery-3.2.1.js"></script>
+		<script src="js/reg.js"></script>
+		<script src="js/header.js"></script>
+		<script src="js/footer.js"></script>
+	</body>
+</html>

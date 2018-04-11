@@ -1,0 +1,96 @@
+/*主div*/
+.main-header{
+	height:70px;
+	width: 100%;
+	border-bottom: 1px solid #e7e7e7;
+	position: fixed !important;
+	top: 0;
+	z-index: 110 !important;
+	background:#fff;
+}
+.main-header>.index-nav{
+	width:1162px;
+	height:70px;
+	margin: 0 auto;
+	position: relative;
+}
+/*导航logo*/
+.main-header>.index-nav>.logo{
+	margin-right: 112px;
+	float: left;
+	
+}
+.main-header>.index-nav>.logo>a{
+	display: block;
+	background:url(../images/index/icon/header_logo_text.png) center center no-repeat;
+	height: 70px;
+	width: 175px;
+	line-height: 200px;
+	overflow: hidden;
+}
+
+/*中间导航菜单*/
+.main-header>.index-nav>.nav>ul{
+	height: 70px;
+	float: left;
+}
+.main-header>.index-nav>.nav>ul.nav-center>li{
+	float: left;
+	height: 70px;
+	line-height: 70px;
+	margin-right: 42px;
+}
+.main-header>.index-nav>.nav>ul.nav-center>li>a.cur{
+	color:#C8B49B;
+}
+/*右侧登录注册购物车*/
+.main-header>.index-nav>.nav>.nav-right{
+	float: right;
+	height: 70px;
+	line-height: 70px;
+}
+.main-header>.index-nav>.nav>.nav-right>span.login-btn{
+	display: block;
+	float: left;
+	height:70px;
+}
+.main-header>.index-nav>.nav>.nav-right>span.shop-bag{
+	display:block;
+	/*display:none;*/
+}
+.main-header>.index-nav>.nav>.nav-right>span.shop-bag>a{
+	display: block;
+	float:left;
+}
+.main-header>.index-nav>.nav>.nav-right>span.shop-bag>a>i,em{
+	display: block;
+	float:left;
+}
+.main-header>.index-nav>.nav>.nav-right>span.shop-bag>a>i{
+	margin-left:30px;
+	background: url(../images/index/icon/shop_bag.png) -1px 0 no-repeat;
+	height: 26px;
+	width: 22px;
+	position: relative;
+	top: 22px;
+}
+.main-header>.index-nav>.nav>.nav-right>span.shop-bag>a>em{
+	display: block;
+	height: 16px;
+	width: 16px;
+	border:1px solid #3C2314;
+	border-radius: 50%;
+	background:#3C2314;
+	font-size: 12px;
+	color:#FBF5DD;
+	text-align:center;
+	line-height: 16px;
+	position: relative;
+	top: 28px;
+	margin-left: 5px;
+	/*margin-right: 10px;*/
+	letter-spacing: -0.5px;
+}
+.main-header>.index-nav>.nav>.nav-right>span.shop-bag>a.logout-btn{
+	margin-left: 30px;
+}

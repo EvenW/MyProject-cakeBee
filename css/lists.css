@@ -1,0 +1,207 @@
+header{
+	width:100%;
+	height: 71px;
+	overflow: hidden;
+	margin:0 auto;
+	
+}
+/*引入头部*/
+header>iframe.header{
+	width:100%;
+	margin:0 auto;
+}
+/*分类检索*/
+section>.searchF{
+	width:1162px;
+	margin: 20px auto 0;
+}
+section>.searchF>dl.classic{
+	display: flex;
+	line-height: 48px;
+}
+
+section>.searchF>dl.classic>dd{
+	display: flex;
+}
+section>.searchF>dl.classic>dd>ul{
+	display: flex;
+}
+section>.searchF>dl.classic>dd>div.allBtn{
+	
+	display: flex;
+}
+section>.searchF>dl.classic>dd>div.allBtn>span{
+	padding:0 28px;
+	margin-left:42px; 
+}
+section>.searchF>dl.classic a.selected{
+	
+	color: #C8B49B !important;
+}
+section>.searchF>dl.classic>dd>div.allBtn>em{
+	margin-right:7px;
+}
+section>.searchF>dl.classic>dd>ul>li{
+	padding:0 21px;
+}
+/*产品列表*/
+section>.product-list{
+	border-top: 1px solid #e9e9e9;
+	padding-top: 20px;
+	width:1162px;
+	margin:40px auto 0;
+}
+section>.product-list>.item>ul.item-ul{
+	display: flex;
+	justify-content:initial;
+	flex-wrap: wrap;
+	width:1176px;
+	overflow: hidden;
+}
+section>.product-list>.item>ul.item-ul>li{
+	padding: 28px 7px;
+}
+section>.product-list>.item>ul.item-ul>li>a{
+	position: relative;
+	display: block;
+	width: 280px;
+	height: 280px;
+	overflow: hidden;
+	background-color: rgba(255,255,255,.7);
+	z-index: 100;
+}
+/*修改商品链接文字的鼠标放上样式*/
+section a:hover{
+	color: #3C2314;
+}
+section>.product-list>.item>ul.item-ul>li>a>.image{
+	width:280px;
+	height:280px;
+	/*background-image: url(../images/index/content/3476.jpg);*/
+	background-repeat: no-repeat;
+	z-index:10;
+	opacity: 1;
+	
+}
+section>.product-list>.item>ul.item-ul>li>a>.detailImg:hover{
+	opacity: 1;
+	transform: scale(1.3);
+}
+section>.product-list>.item>ul.item-ul>li>a>.detailImg{
+	width:280px;
+	height:280px;
+	/*background-image: url(../images/index/content/3510.jpg);*/
+	background-repeat: no-repeat;
+	z-index:10;
+	opacity: 0;
+	position: absolute;
+	top:0;
+	-webkit-transition: all .5s ease-out;
+	-moz-transition: all .5s ease-out;
+	-ms-transition: all .5s ease-out;
+	-o-transition: all .5s ease-out;
+	transition: all .5s ease-out
+}
+section>.product-list>.item>ul.item-ul>li>a>.desc{
+	text-align: center;
+	width:250px;
+	height: 50px;
+	position: absolute;
+	bottom: 14px;
+	left:14px;
+	border: 1px solid #e7e7e7;
+	background-color: rgba(255,255,255,0.7);
+	padding-top:8px ;
+	z-index: 100;
+}
+section>.product-list>.item>ul.item-ul>li>a>.desc>h4{
+	color:#AA8764;
+}
+/*送全国产品*/
+
+section>.product-spec{
+	border-top: 1px solid #e9e9e9;
+	padding-top: 20px;
+	width:1162px;
+	margin:40px auto 0;
+}
+section>.product-spec>h2{
+	line-height: 34px;
+}
+section>.product-spec>h2>span{
+	font-size: 18px;
+}
+section>.product-spec>.item>ul.item-ul{
+	display: flex;
+	justify-content:initial;
+	flex-wrap: wrap;
+	width:1176px;
+	overflow: hidden;
+}
+section>.product-spec>.item>ul.item-ul>li{
+	padding: 28px 7px;
+}
+section>.product-spec>.item>ul.item-ul>li>a{
+	position: relative;
+	display: block;
+	width: 280px;
+	height: 280px;
+	overflow: hidden;
+	background-color: rgba(255,255,255,.7);
+	z-index: 100;
+}
+section>.product-spec>.item>ul.item-ul>li>a>.image{
+	width:280px;
+	height:280px;
+	background-image: url(../images/index/content/3484.jpg);
+	background-repeat: no-repeat;
+	z-index:10;
+	opacity: 1;
+	
+}
+section>.product-spec>.item>ul.item-ul>li>a>.detailImg:hover{
+	opacity: 1;
+	transform: scale(1.3);
+}
+section>.product-spec>.item>ul.item-ul>li>a>.detailImg{
+	width:280px;
+	height:280px;
+	background-image: url(../images/index/content/3518.jpg);
+	background-repeat: no-repeat;
+	z-index:10;
+	opacity: 0;
+	position: absolute;
+	top:0;
+	-webkit-transition: all .5s ease-out;
+	-moz-transition: all .5s ease-out;
+	-ms-transition: all .5s ease-out;
+	-o-transition: all .5s ease-out;
+	transition: all .5s ease-out
+}
+section>.product-spec>.item>ul.item-ul>li>a>.desc{
+	text-align: center;
+	width:250px;
+	height: 50px;
+	position: absolute;
+	bottom: 14px;
+	left:14px;
+	border: 1px solid #e7e7e7;
+	background-color: rgba(255,255,255,0.7);
+	padding-top:8px ;
+	z-index: 100;
+}
+section>.product-spec>.item>ul.item-ul>li>a>.desc>h4{
+	color:#AA8764;
+}
+/*引入尾部*/
+footer{
+	width: 100%;
+	height: 532px;
+	overflow: hidden;
+	margin:0 auto;
+}
+footer>iframe{
+	width:100%;
+	height: 532px;
+	overflow: hidden;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>会员登录－ebeecake蛋糕</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/header.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+		<link rel="stylesheet" href="css/login.css" />
+	</head>
+	<body>
+		<div class="main">
+			<!--引入头部-->
+			<header id="header">
+				<!--<iframe class="header" src="header.html" frameborder="0">-->
+				<!--</iframe>-->
+			</header>
+			<!--登录表单-->
+			<section >
+				<div class="center">
+					<div class="center-form">
+						<div class="assign-header">
+							<!--<div class="header-phone">-->
+								<a href="#phone" class="lf rt" data-toggle="tab">手机验证码登录
+								</a>
+							<!--</div>-->
+							<!--<div class="header-account">-->
+								<a href="#account" class="clicked lf rt" data-toggle="tab">账户密码登录</a>
+							<!--</div>-->
+							<!--<div class="header-wechat">-->
+								<a href="#wechat" class="lf rt" data-toggle="tab">
+									<i></i>微信登录
+								</a>
+							<!--</div>-->
+						</div>
+
+						<!--<div class="assign-content">-->
+							<form class="assign-content">
+							<div class="assign-by-phone" id="phone">
+								<div class="assign-phone flex">
+									 <span class="assign-title">手机号码</span>
+									<input class="assign-input" type="text"/>
+								</div>
+								<div class="assign-item flex">
+									<span class="assign-title">验证码</span>
+									<div class="input-flex">
+										<input class="assign-input input-code" data-valiCode="valiCode" type="text"/>
+										<a href="javascript:;" class="assign-input vc1" type="text" name="captcha" alt="点击切换验证码" title="看不清点击换一张">
+											<!--<img src="data/vali-code.php"/>-->
+											<!--<img src="data/code.php" alt=""/>-->
+											<img src="data/login/code.php" onclick="this.src='data/login/code.php?'+Math.random();">
+										</a>
+									</div>
+								</div>
+								<div class="assign-item-msg flex">
+									<span class="assign-title">短信验证码</span>
+									<div class="input-flex">
+										<input class="assign-input input-code" type="text"/>
+										<a class="assign-input" href="javascript:;">获取短信验证码</a>
+									</div>
+								</div>
+								<div class="phone-btn" data-loginbtn="btn"><a class="btn" href="#">登录</a></div>	<div class="help">
+									<a href="#">忘记密码？</a>
+									<a href="#">新会员注册领优惠券</a>
+								</div>
+							</div>
+							<div class="assign-by-account active" id="account">
+								
+								<div class="acount-name flex">
+									 <span class="assign-title">账号</span>
+									<input class="assign-input" name="uname" type="text" placeholder="登录名|手机号码"/>
+								</div>
+								<div class="account-pwd flex">
+									 <span class="assign-title">密码</span>
+									<input class="assign-input" type="password" name="upwd"/>
+								</div>
+								<div class="account-btn" data-loginbtn="btn"><a class="btn" href="#">登录</a></div>
+								<div class="help">
+									<a href="#">忘记密码？</a>
+									<a href="#">新会员注册领优惠券</a>
+								</div>
+							</div>
+							<div class="assign-by-wechat" id="wechat">
+								<h1>微信登录</h1>
+								<div class="ewm-code"></div>
+								<span>请使用微信扫描二维码登录<br>"小蜜蜂蛋糕"</span>
+							</div>
+							<div class="alert">登录名或密码不正确</div>
+							</form>
+						<!--</div>-->
+					</div>
+					
+				</div>
+			</section>
+			<!--引入尾部-->
+			<footer id="footer">
+				<!--<iframe class="footer" src="footer.html" frameborder="0">-->
+				<!--</iframe>-->
+			</footer>
+		</div>
+		<script src="js/jquery-3.2.1.js"></script>
+		<script src="js/login.js"></script>
+		<script src="js/login-tab.js"></script>
+		<script src="js/header.js"></script>
+		<script src="js/footer.js"></script>
+	</body>
+</html>

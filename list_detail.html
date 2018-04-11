@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/header.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+		<link rel="stylesheet" href="css/list_detail.css" />
+	</head>
+	<body>
+		<!--js引入头部-->
+		<header id="header"></header>
+		<!--主题内容-->
+		<section>
+			<!--顶部banner＋详细描述-->
+			<div class="banner-container">
+				<!--banner轮播-->
+				<div class="banner">
+				<!--banner滚动图片-->
+					<div class="banner-img">
+						<div alt="1" class="show"><a href="javascript:item2()" alt="ebeecake小蜜蜂蛋糕"></a></div>
+						<div alt="2"><a href="javascript:item3()" alt="ebeecake小蜜蜂蛋糕"></a></div>
+						<div alt="3"><a href="javascript:item4()" alt="ebeecake小蜜蜂蛋糕"></a></div>
+					</div>
+					<!--banner小圆点-->
+					<div class="banner-page" data-load="bannerInds" >
+						<span class="selected-btn">1</span>
+						<span>2</span>
+						<span>3</span>
+						<span>4</span>
+					</div>
+				</div>
+				<!--banner右侧详细描述-->
+				<div class="details-info">
+					<!--顶部标题-->
+					<h1 class="info-title">${p.title}</h1>
+					<!--蜜度／芝度／脂度/子标题-->
+					<dl>
+						<dt>
+							<span class="md star">蜜度</span>
+							<span class="zd star">芝度</span>
+							<span class="zfd star">脂度</span>
+						</dt>
+						<!--子标题描述-->
+						<dd>
+							<p>${p.subtitle}</p>
+						</dd>
+					</dl>
+					<!--尺寸图片＋规格信息描述-->
+					<div class="size-spec">
+						<!--左侧尺寸图片-->
+						<div class="size-img">
+							<img src="" alt="" />
+						</div>
+						<!--规格描述-->
+						<div class="size-info">
+							<div class="size-pt">${p.weight}</div>
+							<div class="size-pan">+<span>${p.pmax}</span>套餐具</div>
+							<div class="size-pnum">适合<span>${p.pmin}-${p.pmax}</span>人食用</div>
+							<div class="size-dtime">最早20:00配送</div>
+							<div class="size-price"><i>¥${p.price}</i><span>${p.size}cm</span></div>
+						</div>
+					</div>
+					<!--尺寸选择-->
+					<div class="size-select">
+						<ul>
+							<li class="default"><a href="list_detail.html?cid="></a></li>
+							<!--<li>23厘米</li>
+							<li>28厘米</li>
+							<li>32厘米</li>
+							<li>36厘米</li>
+							<li>40厘米</li>
+							<li>44厘米</li>
+							<li>53厘米</li>-->
+						</ul>
+					</div>
+					<!--两个按钮：加入购物袋／立即购买-->
+					<div class="btn">
+						<a class="add-btn" href="#">加入购物袋</a>
+						<a class="buy-btn" href="#">立即购买</a>
+					</div>
+				</div>
+			</div>
+			<!--中间内容图片区域-->
+			<div class="content-detail">
+				<img src="images/loading_02.gif" alt="桃芝|樱桃芝士 ebeecake 小蜜蜂蛋糕" />
+			</div>
+			<!--底部大家都在看-->
+			<div class="detail-recommend">
+				<h2><span>大家都在看</span></h2>
+				<div class="item">
+					<ul class="item-ul">
+							<li>
+								<a href="#">
+									<div class="image"></div>
+									<div class="detailImg"></div>
+									<div class="desc">
+										<h3>思念|缤纷乐园</h3>
+										<h4>¥295起</h4>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="image"></div>
+									<div class="detailImg"></div>
+									<div class="desc">
+										<h3>思念|缤纷乐园</h3>
+										<h4>¥295起</h4>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="image"></div>
+									<div class="detailImg"></div>
+									<div class="desc">
+										<h3>思念|缤纷乐园</h3>
+										<h4>¥295起</h4>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="image"></div>
+									<div class="detailImg"></div>
+									<div class="desc">
+										<h3>思念|缤纷乐园</h3>
+										<h4>¥295起</h4>
+									</div>
+								</a>
+							</li>
+						</ul>
+				</div>
+			</div>
+			<!--评论区-->
+			<div class="comment-container">
+				<h2>商品评论<span class="comment-count">(70)</span></h2>
+				<h3 class="list_ratings">好评度97%</h3>
+				<!--评论楼层区域-->
+				<ul class="comment-lists" id="comment-lists">
+					<li>
+						<!--uname-->
+						<div class="comment-name">1371889****<span class="comment-time">2018-01-01 21:39:21</span></div>
+						<!--点评星星-->
+						<div class="comment-star">
+							<div>
+								<span class="star star1">口感</span>
+							</div>
+							<div>
+								<span class="star star5">配送</span>
+							</div>
+							<div>
+								<span class="star star5">包装</span>
+							</div>
+						</div>
+						<!--评论内容-->
+						<p class="comment-content">口感太好了，就是可惜我们食量小，能有更小的尺寸吗</p>
+					</li>
+				</ul>
+				<div class="comment-page">
+					<ul>
+						<li class="pre nopage"><span>上一页</span></li>
+						<li class="on"><span>1</span></li>
+						<li><span>2</span></li>
+						<li><span>3</span></li>
+						<li><span>4</span></li>
+						<li><span>5</span></li>
+						<li><span>6</span></li>
+						<li><span>...</span></li>
+						<li><span>22</span></li>
+						<li class="next"><span>下一页</span></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<!--js引入尾部-->
+		<footer id="footer"></footer>
+	<script src="js/jquery-3.2.1.js"></script>
+	<script src="js/ajax.js"></script>
+	<script src="js/header.js"></script>
+	<script src="js/footer.js"></script>
+	<script src="js/list_details.js"></script>
+	<!--<script src="js/comment_list.js  "></script>-->
+	</body>
+</html>

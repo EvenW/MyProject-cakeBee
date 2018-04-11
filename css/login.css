@@ -1,0 +1,224 @@
+header{
+	width:100%;
+	height: 71px;
+	overflow: hidden;
+	margin:0 auto;
+}
+/*引入头部*/
+header>iframe.header{
+	width:100%;
+	margin:0 auto;
+}
+/*表单区域*/
+section>.center{
+	width:1162px;
+	height:378px;
+	margin: 80px auto 0;
+	/*border:1px solid red;*/
+}
+section>.center>.center-form{
+	width:382px;
+	height:100%;
+	margin:0 auto;
+	/*border:1px solid green;*/
+}
+/*form头部，页签头*/
+section>.center>.center-form>.assign-header{
+	height:47px;
+	line-height: 45px;
+	border:1px solid #e7e7e7;
+	display: flex;
+	box-sizing: border-box;
+	margin-bottom: 42px;
+}
+section>.center>.center-form>.assign-header>a{
+	display:block;
+	width:120px;
+	/*border:1px solid yellow;*/
+	text-align:center;
+	z-index:10px;
+}
+section>.center>.center-form>.assign-header>a+a{
+	margin-left:10px;
+}
+section>.center>.center-form>.assign-header>a.clicked{
+	background: #C8B49B;
+	color:#fff;
+	position: relative;
+}
+section>.center>.center-form>.assign-header>a.clicked:before{
+	content:"";
+	position:absolute;
+	left:0;
+	right:0 ;
+	bottom : 0;
+	height:4px;
+	width:100%;
+	background:#3C233A;
+}
+section>.center>.center-form>.assign-header>.hoverb:hover{
+	border-bottom:4.5px solid #3C233A;
+	background: #C8B49B;
+	color:#fff;
+}
+section>.center>.center-form>.assign-header>.hoverb{
+	border-bottom:0px solid #3C233A;
+	transition:border .3s;
+	webkit-transition:border .3s;
+}
+/*section>.center>.center-form>.assign-header>a:hover:before{*/
+	/*height:4px;*/
+/*}*/
+/*section>.center>.center-form>.assign-header>a:before{*/
+	/*content:"";*/
+	/*position:absolute;*/
+	/*left:0;*/
+	/*right:0 ;*/
+	/*bottom : 0;*/
+	/*height:0px;*/
+	/*width:120px;*/
+	/*background:#3C233A;*/
+	/*transition:height .3s;*/
+	/*-webkit-transition:height .3s;*/
+/*}*/
+
+section>.center>.center-form>.assign-header>a:last-child>i{
+	background-image:url("../images/login/wx.png");
+	background-repeat:no-repeat;
+	display:inline-block;
+	width:36px;
+	height:36px;
+	background-size:36px 36px;
+	vertical-align: middle;
+	margin-right:8px;
+}
+/*表单内容提交区域*/
+section>.center>.center-form>.assign-content{
+	position:relative;
+}
+section>.center>.center-form>.assign-content>div.active{
+	z-index:10;
+}
+section>.center>.center-form>.assign-content>.assign-by-phone,.assign-by-account,.assign-by-wechat{
+	position:absolute;
+	left:0;
+	top:0;
+	margin:0;
+	background:#fff;
+	width:380px;
+	height:450px;
+/*	margin-bottom: 20px;*/
+}
+section>.center>.center-form>.assign-content .flex{
+	margin-bottom: 20px;
+	display:flex;
+}
+section>.center>.center-form>.assign-content  span.assign-title{
+	height:42px;
+	line-height: 42px;
+	width:100px;
+	/*text-align:center;*/
+}
+section>.center>.center-form>.assign-content .assign-input{
+	display:block;
+	height:40px;
+	line-height:40px;
+	border:1px solid #e7e7e7;
+	padding:0 20px;
+}
+section>.center>.center-form>.assign-content>.assign-by-phone>.assign-phone>.assign-input{
+	width:236px;
+}
+section>.center>.center-form>.assign-content>.assign-by-phone .input-flex{
+	display: flex;
+	width:278px;
+	justify-content: space-between;
+}
+section>.center>.center-form>.assign-content>.assign-by-phone .input-flex>a.vc1{
+	width:130px;
+	padding:0;
+	position:relative;
+	overflow:hidden;
+}
+section>.center>.center-form>.assign-content>.assign-by-phone .input-flex>.vc1>img{
+	display:block;
+	position:absolute;
+	left:-15px;
+}
+section>.center>.center-form>.assign-content>.assign-by-phone .input-code{
+	width:76px;
+}
+/*section>.center>.center-form>.assign-content>.assign-by-phone>div:last-child{*/
+/*	margin-top: 42px;*/
+/*}*/
+section>.center>.center-form>.assign-content>.assign-by-phone>.assign-item-msg a{
+	width:130px;
+	padding-left:0;
+	padding-right:0;
+	text-align:center;
+}
+/*账号密码登录*/
+section>.center>.center-form>.assign-content>.assign-by-account  .assign-input{
+	width:236px;
+}
+/*微信登录*/
+section>.center>.center-form>.assign-content>.assign-by-wechat>h1{
+	font-size:20px;
+	text-align:center;
+	color:black;
+	font-weight:bold;
+}
+section>.center>.center-form>.assign-content>.assign-by-wechat>.ewm-code{
+	height:300px;
+	width:300px;
+	border:1px solid #eee;
+	margin:20px auto 10px;
+	background:url(../images/reg/qrcode.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+section>.center>.center-form>.assign-content>.assign-by-wechat span{
+	display:block;
+	width:100%;
+	text-align:center;
+}
+/*登录按钮*/
+section>.center>.center-form>.assign-content .btn{
+	display: block;
+	width:100%;
+	background:#3C2314;
+	color:#FBF5DD;
+	padding:13px 0px;
+	line-height:14px;
+	text-align:center;
+	margin-top: 42px;
+	margin-bottom:20px;
+}
+/*用户名或密码不正确的弹出框*/
+section>.center>.center-form>.assign-content>.alert{
+	border:1px solid #3C2314;
+	padding:5px 20px;
+	position:absolute;
+	left:25%;
+	top:70%;
+	z-index:20;
+	display:none;
+}
+/*表单底部快捷链接*/
+section>.center>.center-form>.assign-content .help{
+	text-align:right;
+/*	position:relative;*/
+/*	top:268px;*/
+}
+/*引入尾部*/
+footer{
+	width: 100%;
+	height: 532px;
+	overflow: hidden;
+	margin:0 auto;
+}
+footer>iframe{
+	width:100%;
+	height: 532px;
+	overflow: hidden;
+}

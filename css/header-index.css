@@ -1,0 +1,103 @@
+/*主div*/
+body{
+	background-color:transparent;
+}
+.main-header{
+	width:1162px;
+	position: absolute;
+	top: 0;
+	z-index: 110 !important;
+	margin: 0 auto;
+	background-color:transparent;
+}
+.main-header>.index-nav{
+	width: 100%;
+	height:82px;
+	position: relative;
+}
+.main-header>.top-contact{
+	width: 100%;	
+	height:76px;
+}
+
+.main-header>.top-contact>.top-contact-info{
+	float: right;
+	height:52px;
+	line-height: 52px;
+	padding-top: 24px;
+}
+.main-header>.top-contact>.top-contact-info>a{
+	padding-right: 10px;
+}
+.main-header>.top-contact>.top-contact-info>span{
+	padding-right: 20px;
+}
+/*导航logo*/
+.main-header>.logo{
+	float: left;
+	background:url(../images/index/icon/header_logo.png) center center no-repeat;
+	height: 75px;
+	width: 246px;
+	
+}
+/*中间导航菜单*/
+.main-header>.index-nav>.nav>ul{
+	height: 26px;
+	float: left;
+	padding:56px 0 0 21px;
+}
+.main-header>.index-nav>.nav>ul.nav-center>li{
+	float: left;
+	padding:0 21px ;
+	display: list-item;
+}
+/*右侧登录注册购物车*/
+.main-header>.index-nav>.nav>.nav-right{
+	float: right;
+}
+.main-header>.index-nav>.nav>.nav-right>span.login-btn{
+	display: block;
+	float: left;
+	padding:56px 0 0 0;
+}
+.main-header>.index-nav>.nav>.nav-right>span.shop-bag{
+	display: block;
+	position: relative;
+	top: 56px;
+}
+.main-header>.index-nav>.nav>.nav-right>span.shop-bag>a{
+	display: block;
+	float:left;
+}
+.main-header>.index-nav>.nav>.nav-right>span.shop-bag>a>i,em{
+	display: block;
+	float:left;
+	/*position: relative;*/
+	/*top: 56px;*/
+	
+}
+.main-header>.index-nav>.nav>.nav-right>span.shop-bag>a>i{
+	margin-left:30px;
+	background: url(../images/index/icon/shop_bag.png) -1px 0 no-repeat;
+	height: 26px;
+	width: 22px;
+	position: relative;
+	top: -5px;
+}
+.main-header>.index-nav>.nav>.nav-right>span.shop-bag>a>em{
+	display: block;
+	height: 16px;
+	width: 16px;
+	border:1px solid #3C2314;
+	border-radius: 50%;
+	background:#3C2314;
+	font-size: 12px;
+	color:#FBF5DD;
+	text-align:center;
+	line-height: 16px;
+	margin-left: 5px;
+	letter-spacing: -0.5px;
+}
+.main-header>.index-nav>.nav>.nav-right>span.shop-bag>a.logout-btn{
+	margin-left: 30px;
+}

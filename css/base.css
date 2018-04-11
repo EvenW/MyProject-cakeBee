@@ -1,0 +1,104 @@
+body{
+	font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"PingFang SC","\5FAE\8F6F\96C5\9ED1","\5b8b\4f53",sans-serif,tahoma;
+	background: #fff;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	letter-spacing: 1.5px;
+}
+body,dd,li,dl,form,h1,h2,h3,h4,h5,h6,li,ol,p,ul,span,a,input,form{
+	margin:0;
+	padding: 0;
+}
+h1,h2,h3,h4,h5,h6,i,em,span{
+	font-size: 100%;
+	font-weight: 400;
+	font-style:normal; 
+}
+body,a{
+	color: #3C2314;
+}
+
+ol,ul{
+	list-style:none;
+}
+a{
+	text-decoration: none;
+	outline: 0;
+}
+/*修改input默认样式*/
+/*设置input元素placeholder的颜色*/
+input::-webkit-input-placeholder{
+	color:#ddd;
+}
+input::-moz-placeholder{
+	color:#ddd;
+}
+input::-ms-input-placeholder{
+	color:#ddd;
+}
+a:hover{
+	color: #C8B49B;
+}
+input{outline:0;font-size: 100%;}
+/*清除浮动*/
+.clear:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+/*清除上边距问题*/
+.float:before{
+	content: "";
+	display:table;
+}
+.lf{
+	float:left;
+}
+.rt{
+	float:right;
+}
+.fixed_nav{
+	background: #fff;
+	position:fixed;
+	z-index: 11;
+	top:0;
+	left:0;
+	right: 0;
+	width: 110%;
+	height:70px;
+	transition: box-shadow 0.1s;
+	margin:0 auto;
+	box-shadow: 0 0 1px -1px #6e6e6e;
+	background: #fff;
+}
+/*级别星星，详情页面用评论区*/
+/*1个星星*/
+.star1{
+	background-position: 44px 0px;
+}
+/*2个星星*/
+.star2{
+	background-position: 44px -34px;
+}
+/*3个星星*/
+.star3{
+	background-position: 44px -68px;
+}
+/*4个星星*/
+.star4{
+	background-position: 44px -102px;
+}
+/*5个星星*/
+.star5{
+	background-position: 44px -136px;
+}
+/*星星前标题*/
+.star{
+	background-image: url(../images/details/star.png);
+	background-repeat: no-repeat;
+	/*font-size:12px;*/
+	padding:0 130px 0 0;
+	line-height: 14px;
+	font-size:12px;
+}
